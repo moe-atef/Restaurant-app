@@ -1,0 +1,94 @@
+.card{
+  position: fixed;
+  top: 15%;
+  left: 30%;
+  width: 40%;
+  max-height: 70%;
+  margin: auto;
+  padding: 10px;
+  z-index: 15;
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.4);
+  overflow-y: scroll;
+  opacity: 0;
+  transform: scale(.9);
+  transition: all .2s ease;
+  text-align: center;
+}
+.card.open{
+  opacity: 1;
+  transform: scale(1);
+}
+.meal{
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name{
+  padding: 10px 0;
+}
+.meal-details{
+display: flex;
+}
+.price{
+  font-weight: bold;
+  color: orangered;
+  font-size: 16px;
+  padding-top: 10px;
+  position: relative;
+}
+.amount {
+  position: absolute;
+  left: 9rem;
+  margin-top: 5px;
+  font-weight: bold;
+  padding:4px 10px;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+}
+.line{
+  width: 100%;
+  height: 0px;
+  border: 1px solid orangered;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .4);
+  backdrop-filter: blur(2px);
+  transition: opacity .2s ease;
+  z-index: 5;
+  opacity: 0;
+}
+.overlay.open{
+  opacity: 1;
+}
+.button{
+  font-size: 16px;
+  font-weight: bold;
+  color: orangered;
+  padding:4px 15px;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-right:.5rem ;
+  transition: all .3s;
+}
+.button:hover{
+  background-color: #dcdcdc27;
+}
+.button:active{
+  transform: scale(.95);
+}
+.noCart{
+width: 200px;
+height: 200px;
+margin: 20px 0;
+}
+.noCardDescription{
+  margin-bottom: 20px;
+}

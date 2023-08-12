@@ -1,0 +1,50 @@
+.card{
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  transform: translateY(-6rem);
+}
+.meal{
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.description{
+  padding: 10px 0;
+}
+.price{
+  font-weight: bold;
+  color: orangered;
+  font-size: 18px;
+}
+.amount {
+  font-weight: bold;
+  padding: 0 10px;
+}
+.add-button{
+display: block;
+margin: .5rem 0;
+margin-left: auto;
+padding:7px 35px;
+background-color: orangered;
+border-radius: 100px;
+border: none;
+font-weight: bold;
+color: #fff;
+transition: all .5s;
+}
+.add-button:hover{
+  background-color: rgb(211, 56, 0);
+}
+.add-button:active{
+  transform: scale(.95);
+  transition: .2s;
+}
+.meal input{
+  width: 2.75rem;
+  height: 1.5rem;
+  padding: 5px;
+  border: solid 1px #d1d1d1;
+  outline: none;
+}
